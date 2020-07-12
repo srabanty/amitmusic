@@ -1,0 +1,348 @@
+.body{
+    font-family: 'Fondamento', cursive;
+}
+html {
+    scroll-behavior: smooth;
+  }
+.navigation{
+    background-color: #1A1A1A;
+    min-height: 80px;
+}
+.bg-light{
+    background-color: transparent!important;
+}
+.navbar-toggler{
+    border: none;
+}
+.navigation .navbar{
+    min-height: 80px;
+    overflow: hidden;
+}
+.navigation .navbar a,.navigation .navbar #navbarNav a{
+    color: white;
+    background-color: none!important;
+    font-family: 'Fondamento', cursive;
+    font-size: 18px;
+}
+.navigation .navbar .navbar-brand{
+    font-family: 'Fondamento', cursive;
+    font-size: 30px;
+    color: white;
+}
+.navigation .navbar a span{
+    font-family: 'Fondamento', cursive;
+    color: red;
+}
+/* -----------------------------Banner Area------------------------------ */
+.carousel-inner{
+    padding-top: 80px;
+}
+.carousel-inner .carousel-item{
+position: relative;
+background-repeat: no-repeat;
+}
+.carousel-inner .carousel-item::before{
+    position: absolute;
+    content: "";
+    background-color: black;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+
+}
+.carousel-caption{
+    bottom: 180px;
+    font-family: 'Marck Script', cursive;
+}
+.carousel-caption h1{
+    padding-bottom: 15px;
+}
+/* -----------------------------About Area------------------------------ */
+.about-area{
+    padding:200px 0px;
+}
+.about-area .about-img img{
+    width: 400px;
+    z-index: 1;
+    position: relative;
+}
+.about-area .about-img{
+    position: relative;
+}
+.about-area .about-img:before {
+    position: absolute;
+    content: "";
+    width: 350px;
+    height: 235px;
+    border: 7px solid #1A1A1A;
+    left: -24px;
+    top: 55px;
+    z-index: 0;
+}
+.about-area h1,.video-area h1,.album-area h1,.discography-area h1,.about-area h5,.video-area h5,.album-area h5,.discography-area h5{
+    font-family: 'Fondamento', cursive;
+    color: #1A1A1A;
+
+}
+.about-area h5,.video-area h5,.album-area h5,.discography-area h5{
+    padding-bottom: 100px;
+    font-family: 'Marck Script', cursive;
+    font-size: 25px;
+}
+.text-align-center{
+    text-align: center;
+}
+.about-area h6{
+    font-family: 'Poppins', sans-serif;
+    line-height: 25px;
+    font-weight: 400;
+}
+.about-area h6 span{
+    font-size: 45px;
+    font-family: 'Fondamento', cursive;
+}
+.about-area .about-info p{
+    font-family: 'Marck Script', cursive;
+    font-size: 30px;
+}
+/*-- ------------------------------Video Area-------------------------- */
+.video-area .single-video{
+    padding: 20px 5px;
+}
+.video-area .single-video iframe{
+    border: 5px solid lightgrey;
+}
+
+.video-area,.album-area,.discography-area{
+    padding: 130px 0px;
+}
+/*-- ------------------------------Album Area-------------------------- */
+.album-area .single-album img{
+    box-shadow: 0px 0px 20px 5px gray;
+    border: 5px solid #f5f0f0;
+    border-radius: 5px;
+}
+.album-area .single-album img:hover{
+    transform: scale(1.10);
+    transition:1s ease-in-out;
+}
+/*-- ------------------------------Discography Area-------------------------- */
+.discography-area .discography-list h5{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Marck Script', cursive;
+    font-family: 'Abel', sans-serif;
+    
+    
+}
+.discography-area .discography-list h5 span{
+   color: red; 
+}
+.discography-area .discography-list ol{
+    list-style: lower-roman;
+}
+.discography-area .discography-list ol li{
+    padding-left: 20px;
+}
+.discography-area .discography-list h5 {
+    padding: 50px 0px;
+}
+/*-- ------------------------------footer Area-------------------------- */
+footer{
+    background-color: #1A1A1A ;
+}
+.footer-area{
+    padding: 100px 0px;
+}
+.footer-area .footer-image .row{
+    display: flex;
+}
+.footer-area .footer-image .row img{
+    width: 25%;
+    height: 50%;
+    padding: 10px;
+}
+.footer-area{
+    color: white;
+    font-family: 'Fondamento', cursive;
+}
+.footer-area h5{
+    padding-bottom: 20px;
+}
+.footer-area .icons i{
+    font-size: 20px;
+    color: white;
+    margin-right: 10px;
+    line-height: 40px;
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    transition: .3s;
+}
+.footer-area .icons i:hover{
+    background-color: white;
+    color: black;
+    transition: .3s;
+}
+footer p{
+    margin: auto;
+    color: white;
+    font-family: 'Fondamento', cursive;
+    font-size: 20px;
+    padding: 80px 0px;
+}
+@media(min-width: 1200px){
+    
+}
+
+@media(min-width: 920px) and (max-width:1199px){
+
+}
+
+@media(min-width: 768px) and (max-width:991px){
+    .carousel-caption {
+        bottom: 87px;
+    }
+    .about-area .about-img::before {
+        width: 307px;
+        height: 217px;
+        left: -16px;
+        top: 31px;
+    }
+    .about-area h6 {
+        line-height: 18px;
+        font-weight: 400;
+    }
+    footer p {
+        padding: 10px 0px;
+    }
+}
+
+@media(min-width: 576px) and (max-width:767px){
+    .carousel-caption {
+        bottom: 35px;
+    }
+    h3 {
+        font-size: 1.50rem;
+    }
+    .about-area h6 {
+        padding-top: 80px;
+    }
+    .album-area .single-album{
+        padding: 30px;
+    }
+    .footer-area {
+        padding: 56px 0px;
+    }
+    footer p {
+        padding: 10px 0px;
+    }
+    h5 {
+        font-size: 1.0rem;
+    }
+    .footer-area .footer-image .row img {
+        width: 30%;
+    }
+    .video-area, .album-area, .discography-area {
+        padding: 65px 0px;
+    }
+    .about-area h5, .video-area h5, .album-area h5, .discography-area h5 {
+        padding-bottom: 55px;
+    }
+    .about-area {
+        padding: 100px 0px;
+    }
+}
+@media(min-width: 320px) and (max-width:575px){
+    .carousel-caption {
+        bottom: 16px;
+    }
+    .h3, h3 {
+        font-size: 1rem;
+    }
+    .carousel-caption h1 {
+        padding-bottom: 0px;
+        font-size: 1.2rem;
+    }
+    .navigation .navbar .navbar-brand {
+        font-size: 24px;
+    }
+    .about-area {
+        padding: 100px 0px;
+    }
+    .about-area h5, .video-area h5, .album-area h5, .discography-area h5 {
+        padding-bottom: 50px;
+        font-size: 19px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .about-area .about-img img {
+        width: 250px;
+    }
+    .about-area .about-img::before {
+        width: 231px;
+        height: 156px;
+        border: 5px solid #1A1A1A;
+        left: -18px;
+        top: 29px;
+    }
+    .about-area h6 {
+        line-height: 19px;
+        font-weight: 300;
+        padding-top: 54px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .about-area .about-info p {
+        padding: 0px 10px;
+    }
+    .video-area, .album-area, .discography-area {
+        padding: 40px 0px;
+    }
+    .about-area h5, .video-area h5, .album-area h5, .discography-area h5 {
+        padding-bottom: 40px;
+        font-size: 16px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .album-area .single-album img:hover{
+        transform: scale(0.90);
+    }
+    .album-area .single-album img {
+        margin: 15px 0px;
+    }
+    .discography-area .discography-list ol li {
+        padding-left: 8px;
+    }
+    .discography-area .discography-list h5 {
+        padding: 20px 5px;
+    }
+    .footer-area {
+        padding: 57px 0px;
+    }
+    .footer-area h5 {
+        padding-bottom: 4px;
+        font-size: 12px;
+        padding-left: 5px;
+    }
+    .footer-area .footer-image .row img {
+        width: 30%;
+        padding: 2px;
+    }
+    .footer-area .icons i {
+        font-size: 13px;
+        margin-right: 7px;
+        line-height: 23px;
+        border: 1px solid white;
+        width: 25px;
+        height: 25px;
+    }
+    footer p {
+        font-size: 14px;
+        padding: 10px 0px;
+    }
+
+}
